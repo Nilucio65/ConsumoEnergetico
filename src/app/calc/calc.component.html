@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container card ">
+  <div class="mb-3">
+    <label for="moradores" class="form-label">Quantas pessoas moram na casa?</label>
+    <input type="number" class="form-control" id="moradores" [(ngModel)]="pessoas">
+  </div>
+  <div class="mb-3">
+    <label for="comodos" class="form-label">Quantos cômodos?</label>
+    <input type="number" class="form-control" id="comodos" [(ngModel)]="comodos" >
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="lvr" [(ngModel)]="lvr">
+    <label class="form-check-label" for="lvr" >Possui maquina de lavar roupas</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="scdr" [(ngModel)]="scdr">
+    <label class="form-check-label" for="scdr" >Possui secadora de roupas</label>
+  </div>
+  <div class="mb-3">
+    <label for="tv" class="form-label">Quantas TVs?</label>
+    <input type="number" class="form-control" id="tv" [(ngModel)]="tv">
+  </div>
+  <div class="mb-3">
+    <label for="pc" class="form-label">Quantos computadores?</label>
+    <input type="number" class="form-control" id="pc" [(ngModel)]="pc">
+  </div>
+  <div class="mb-3">
+    <label for="tarifa" class="form-label">Qual o valor da tarifa energética?</label>
+    <input type="number" class="form-control" id="comodos" [(ngModel)]="tarifa">
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="Calcular()">Calcular</button>
+
+  <div class="mb-3">
+    <label for="gastoE" class="form-label">O gasto energético é:</label>
+    <input type="number" class="form-control" id="gastoE" [(ngModel)]="gastoE">
+  </div>
+  <div class="mb-3">
+    <label for="preco" class="form-label">O preço a ser pago é:</label>
+    <input type="number" class="form-control" id="preco" [(ngModel)]="preco">
+  </div>
+</div>
+</body>
+</html>
